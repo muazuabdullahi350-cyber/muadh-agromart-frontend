@@ -2,6 +2,9 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Stats from "./components/Stats";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
       <Hero />
       <Categories />
       <FeaturedProducts />
+      <WhyChooseUs />
+      <Stats />
+      <Testimonials />
     </>
   );
 }
