@@ -5,6 +5,7 @@ import FeaturedProducts from "./components/FeaturedProducts";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Stats from "./components/Stats";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,8 +17,10 @@ function App() {
       <WhyChooseUs />
       <Stats />
       <Testimonials />
+      <Footer />
     </>
   );
 }
 
 export default App;
+

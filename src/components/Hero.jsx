@@ -1,27 +1,38 @@
 function Hero() {
   return (
-    <section className="bg-gradient-to-r from-green-900 via-green-700 to-green-600 text-white py-24">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h1 className="text-5xl md:text-6xl font-extrabold">
-          Working with Nature,
-          <br />
-          Trading with Trust.
-        </h1>
+    <section className="bg-gradient-to-r from-green-900 to-green-700 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-10 items-center">
 
-        <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
-          Buy healthy livestock, premium animal feed, veterinary products,
-          and farm services from Nigeria's trusted livestock marketplace.
-        </p>
+        {/* Left Side */}
+        <div>
+          <h1 className="text-5xl font-extrabold leading-tight">
+            Nigeria's Trusted <span className="text-yellow-400">Livestock & Feed</span> Marketplace
+          </h1>
 
-        <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
-          <button className="bg-yellow-400 text-green-900 font-bold px-8 py-4 rounded-xl hover:bg-yellow-300 transition">
-            Browse Marketplace
-          </button>
+          <p className="mt-6 text-lg text-gray-200">
+            Buy healthy livestock directly from trusted farmers across Nigeria.
+          </p>
 
-          <button className="border-2 border-white px-8 py-4 rounded-xl hover:bg-white hover:text-green-900 transition">
-            Request Livestock
-          </button>
+          <div className="mt-8 flex gap-4">
+            <button className="bg-yellow-500 text-black px-6 py-3 rounded-lg font-bold">
+              Browse Marketplace
+            </button>
+
+            <button className="border border-white px-6 py-3 rounded-lg">
+              Contact on WhatsApp
+            </button>
+          </div>
         </div>
+
+        {/* Right Side */}
+        <div>
+          <img
+            src="/hero-Ram.jpg"
+            alt="Premium White Ram"
+            className="rounded-3xl shadow-2xl w-full"
+          />
+        </div>
+
       </div>
     </section>
   );

@@ -3,56 +3,59 @@ function Testimonials() {
     {
       name: "Musa Ibrahim",
       location: "Kano",
-      message:
+      comment:
         "Excellent service. The livestock arrived healthy and exactly as described.",
     },
     {
       name: "Aisha Bello",
       location: "Abuja",
-      message:
-        "MU'ADH AGROMART made buying livestock easy and trustworthy.",
+      comment:
+        "MU'ADH Livestock Feed Farm Enterprise made buying livestock easy and trustworthy.",
     },
     {
       name: "Usman Ali",
       location: "Maiduguri",
-      message:
+      comment:
         "Professional customer service and quality animal feed. Highly recommended!",
     },
   ];
 
   return (
-    <section style={{ padding: "60px 20px", textAlign: "center" }}>
-      <h2>What Our Customers Say</h2>
-      <p>Trusted by livestock farmers and traders.</p>
+    <section className="py-20 bg-gray-100">
+      <div className="max-w-7xl mx-auto px-6">
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-          gap: "20px",
-          marginTop: "30px",
-        }}
-      >
-        {testimonials.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "12px",
-              padding: "20px",
-            }}
-          >
-            <div style={{ fontSize: "24px" }}>⭐⭐⭐⭐⭐</div>
+        <h2 className="text-4xl font-bold text-center text-green-700">
+          What Our Customers Say
+        </h2>
 
-            <p style={{ margin: "20px 0" }}>
-              "{item.message}"
-            </p>
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
 
-            <h3>{item.name}</h3>
+          {testimonials.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-lg p-8"
+            >
+              <div className="text-yellow-500 text-xl">
+                ⭐⭐⭐⭐⭐
+              </div>
 
-            <small>{item.location}</small>
-          </div>
-        ))}
+              <p className="mt-5 italic text-gray-600">
+                "{item.comment}"
+              </p>
+
+              <h3 className="mt-6 font-bold text-lg">
+                {item.name}
+              </h3>
+
+              <p className="text-gray-500">
+                {item.location}
+              </p>
+
+            </div>
+          ))}
+
+        </div>
+
       </div>
     </section>
   );
