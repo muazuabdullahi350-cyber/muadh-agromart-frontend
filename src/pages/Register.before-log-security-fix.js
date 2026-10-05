@@ -27,9 +27,11 @@ function Register() {
     try {
       setLoading(true);
 
+      console.log("Submitting form:", form);
 
       const res = await api.post("/auth/register", form);
 
+      console.log("Response:", res.data);
 
       alert("Registration successful!");
 
